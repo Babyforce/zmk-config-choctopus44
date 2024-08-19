@@ -14,6 +14,21 @@
 &sk { quick-release; };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        CB_TAB {
+            bindings = <&kp TAB>;
+            key-positions = <28 27>;
+            layers = <0>;
+        };
+
+        CB_ESC {
+            bindings = <&kp ESC>;
+            key-positions = <3 4>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
