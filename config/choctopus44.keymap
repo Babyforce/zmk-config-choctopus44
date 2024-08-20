@@ -29,6 +29,20 @@
         };
     };
 
+    behaviors {
+        HRM: HRM {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 5 24 25 26 27 28 29 12 17 6 7 8 9 10 11 18 23 31 32 33 34 35 36 30 37 38 39 40 41 42 43 44>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
